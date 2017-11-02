@@ -16,9 +16,9 @@ public:
     ~Child() { cout << "Destruct Child object\n"; }
 };
 
-int main(int argc, char *argv[])
+int main()
 {
-    cout << "* Create Object child" << endl;
+    cout <<"this is working now";
     Child child;
 
     return 0;

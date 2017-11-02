@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+void hleb(int a, int b){cout << a*b;}
 class Base
 {
 public:      
@@ -22,6 +22,9 @@ int main()
 {
     Base base;
     Child child;
-
+    int c, d;
+    cout <<"c="; cin >>c;
+    cout <<"d="; cin >>d;
+    hleb(c, d);
     return 0;
 }

@@ -16,7 +16,7 @@ class Child: public Base
 public:
     Child() { cout << "Construct Child object\n"; }
     ~Child() { cout << "Destruct Child object\n"; }
-
+void bred() {cout <<"function in class is working now";}
     void func() const { cout << "Function func() of class Child\n"; }
 };
 
@@ -26,14 +26,13 @@ void Function(const Base &obj)
     obj.func();
 }
 
-int main(int argc, char *argv[])
+int main()
 {
     cout << "* Create Object base" << endl;
     Base base;
-
     cout << "* Create Object child" << endl;
     Child child;
-
+    child.bred();
     cout << "* Call method func() for object base" << endl;
     Function(base);
 
